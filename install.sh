@@ -22,12 +22,6 @@ case $allowed in
     cp -r config/* ~/.config
     cp -r home/.*rc ~/.
     printf "${cg} [*] Configs Copied\n"
-    printf "${cb} [*] Copying Scripts\n"
-    cp -r bin/* ~/.local/bin/
-    printf "${cg} [*] Scripts Copied\n"
-    printf "${cb} [*] Copying Wallpapers\n"
-    cp -r walls/* ~/Pictures/Wallpapers
-    printf "${cg} [*] Wallpapers Copied\n"
     printf "${cb} [*] Copying Fonts\n"
     cp -rn fonts/* ~/.fonts
     printf "${cg} [*] Fonts Copied\n"
