@@ -8,8 +8,8 @@ super + @space
 super + b
   firefox
 
-super + p
-  pcmanfm
+super + n
+  nautilus
 
 super + Escape
   pkill -USR1 -x sxhkd
