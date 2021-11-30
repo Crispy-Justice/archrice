@@ -1,5 +1,7 @@
 base-devel
 bpytop
+blueberry
+pulseaudio-bluetooth
 bspwm
 feh
 firefox
@@ -9,11 +11,14 @@ lsd
 neofetch
 picom-ibhagwan-git
 pipes.sh
+python-pywal
+python2
 polybar
 pulseaudio
 pulseaudio-alsa
 ranger
 rofi
+rofi-power-menu
 speedtest-cli
 tty-clock-git
 unarchiver
@@ -25,4 +30,5 @@ zsh
 cava
 cmus
 htop
+xg86-video-intel
 
