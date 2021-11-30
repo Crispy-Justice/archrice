@@ -1,5 +1,4 @@
 alacritty
-base-devel
 bpytop
 blueberry
 pulseaudio-bluetooth
@@ -16,7 +15,7 @@ python-pywal
 python2
 python-pip
 python
-polybar
+zsh
 pulseaudio
 pulseaudio-alsa
 ranger
@@ -36,5 +35,4 @@ htop
 xf86-video-intel
 git
 nano
-vim
-firefox
+yt-dlp
