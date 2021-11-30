@@ -3,7 +3,7 @@
 #Autostart
 sxhkd &
 picom &
-feh --bg-fill -r -z ~/Pictures/Wallpapers &
+wal -i ~/Pictures/Wallpapers &
 xsetroot -cursor_name left_ptr &
 $HOME/.config/polybar/launch.sh &
 
