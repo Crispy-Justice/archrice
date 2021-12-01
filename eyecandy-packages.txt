@@ -36,3 +36,4 @@ xf86-video-intel
 git
 nano
 yt-dlp
+papirus-icon-theme
