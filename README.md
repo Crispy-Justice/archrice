@@ -17,5 +17,5 @@
 
 ##  Install all the packages
 
-    sudo pacman -S --needed <packges>
+    sudo pacman -S --needed --noconfirm --sudoloop <packges>
 
