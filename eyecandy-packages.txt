@@ -1,4 +1,5 @@
 alacritty
+atom
 blueberry
 bpytop
 bspwm
