@@ -14,12 +14,17 @@ super + n
 super + Escape
   pkill -USR1 -x sxhkd
 
-ctrl + shift + p
-  rofi -show p -modi p:rofi-power-menu -theme powermenu.rasi
+super + alt + p
+  rofi -show menu -modi "menu:rofi-power-menu --choices=logout/suspend/reboot/shutdown" -theme powermenu
+
+super + alt + c
+  rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}' -theme clipboard
+
 
 #Screenshot
 Print
   flameshot gui
+
 
 #Workspaces
 super + {_,shift + }{1-9,0}
@@ -27,7 +32,6 @@ super + {_,shift + }{1-9,0}
 
 super + alt + {q,r}
   bspc {quit,wm -r}
-
 
 
 #Hardware
@@ -42,6 +46,7 @@ XF86MonBrightnessUp
 
 XF86MonBrightnessDown
   xbacklight -5
+
 
 #Window Management
 super + Tab
@@ -67,3 +72,4 @@ super + {_,shift + }{1-9,0}
 
 super + m
 	bspc desktop -l next
+
