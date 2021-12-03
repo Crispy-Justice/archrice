@@ -7,11 +7,12 @@ configuration {
 }
 
 @theme "/dev/null"
+@import "~/.cache/wal/colors-rofi-dark.rasi"
 
 * {
-  bg: #151515;
-  fg: #d0d0d0;
-  alt: #1c1c1c;
+  bg: @normal-background;
+  fg: #ffffff;
+  alt: @normal-foreground;
   rad: 10px;
 
   background-color: @bg;
@@ -36,11 +37,13 @@ prompt, entry, element selected {
 }
 
 prompt {
+   text-color: #000000;
    padding: 1.5%;
    font: "feather 14";
 }
 
 entry {
+  text-color: #000000;
   blink: false;
   padding: 0 1.5% 0 0;
   placeholder: "Search through apps";
@@ -75,4 +78,3 @@ listview, element, element selected, element-text, element-icon {
 entry {
   cursor: text;
 }
-
