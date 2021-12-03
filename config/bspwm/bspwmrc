@@ -3,6 +3,7 @@
 #Autostart
 sxhkd &
 picom &
+greenclip daemon &
 wal -i ~/Pictures/Wallpapers &
 xsetroot -cursor_name left_ptr &
 $HOME/.config/polybar/launch.sh &
