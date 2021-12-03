@@ -27,6 +27,7 @@ python-pip
 python-pywal
 ranger
 rofi
+rofi-greenclip
 rofi-power-menu
 speedtest-cli
 tty-clock-git
