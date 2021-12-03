@@ -28,6 +28,17 @@
     sudo pacman -S --needed --noconfirm --sudoloop <packges>
 **reboot**
 
+## Install oh-my-zsh
+
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+   **Install Plugin**
+   
+
+    cd Downloads
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+    cp zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/
+
+
 ## Personalize
 
     cd Downloads
