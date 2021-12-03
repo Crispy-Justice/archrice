@@ -31,14 +31,9 @@
 ## Install oh-my-zsh
 
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-   **Install Plugin**
-   
+    git clone --depth 1 https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-    cd Downloads
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-    cp zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/
-
-
+  
 ## Personalize
 
     cd Downloads
@@ -50,7 +45,7 @@
 ## Install grub theme
 
     cd Downloads
-    git clone https://github.com/vinceliuice/grub2-themes.git
+    git clone --depth 1 https://github.com/vinceliuice/grub2-themes.git
     cd grub2-themes
     sudo ./install.sh
 
