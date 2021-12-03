@@ -1,0 +1,78 @@
+configuration {
+  font: "Jetbrains Mono 10";
+  show-icons: false;
+}
+
+@theme "/dev/null"
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
+* {
+  bg: @normal-background;
+  fg: #ffffff;
+  alt: @normal-foreground;
+  rad: 10px;
+
+  background-color: @bg;
+  text-color: @fg;
+}
+
+mainbox {
+  children: [ inputbar, listview ];
+  padding: 1.5em;
+  spacing: 1em;
+}
+
+inputbar {
+  children: [ prompt, entry ];
+  border-radius: @rad;
+  background-color: @alt;
+}
+
+prompt, entry, element selected {
+  vertical-align: 0.5;
+  background-color: @alt;
+}
+
+prompt {
+   text-color: #000000;
+   padding: 1.5%;
+   font: "Jetbrains Mono Bold 10";
+}
+
+entry {
+  text-color: #000000;
+  blink: false;
+  padding: 0 1.5% 0 0;
+  placeholder: "Search...";
+  placeholder-color: grey;
+}
+
+listview {
+  layout: vertical;
+  lines: 7;
+  columns: 1;
+  cycle: false;
+}
+
+element {
+  orientation: vertical;
+  padding: 0.25em 1em 0.25em 1em;
+  border-radius: @rad;
+}
+
+element-text, element-icon {
+  horizontal-align: 0.5;
+  background-color: inherit;
+}
+
+element-text { expand: true; }
+element-icon { size: 48px; }
+
+listview, element, element selected, element-text, element-icon {
+  cursor: pointer;
+}
+
+entry {
+  cursor: text;
+}
+
