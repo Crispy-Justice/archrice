@@ -28,6 +28,14 @@
     sudo pacman -S --needed --noconfirm --sudoloop <packges>
 **reboot**
 
+## Personalize
+
+    cd Downloads
+    git clone https://github.com/Crispy-Justice/archrice.git
+    cd archrice
+    chmod +x install.sh
+    ./install.sh
+
 ## Install grub theme
 
     cd Downloads
