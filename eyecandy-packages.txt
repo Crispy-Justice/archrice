@@ -39,3 +39,4 @@ yt-dlp
 papirus-icon-theme
 nautilus
 capitaine-cursors
+unimatrix
