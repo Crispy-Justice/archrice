@@ -1,91 +1,77 @@
-
-* {
-  black:      #000000;
-  red:        #eb6e67;
-  green:      #95ee8f;
-  yellow:     #f8c456;
-  blue:       #6eaafb;
-  mangenta:   #d886f3;
-  cyan:       #6cdcf7;
-  emphasis:   #50536b;
-  text:       #dfdfdf;
-  text-alt:   #b2b2b2;
-  fg:         #abb2bf;
-  bg:         #282c34;
-
-  spacing: 0;
-  background-color: transparent;
-
-  font: "FiraCode Nerd Font 12";
-  text-color: @text;
+configuration {
+  font: "Jetbrains Mono 10";
+  show-icons: false;
 }
 
-window {
-  transparency: "real";
-  fullscreen: true;
-  background-color: #282c34dd;
+@theme "/dev/null"
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
+* {
+  bg: @normal-background;
+  fg: #ffffff;
+  alt: @normal-foreground;
+  rad: 10px;
+
+  background-color: @bg;
+  text-color: @fg;
 }
 
 mainbox {
-  padding: 30% 30%;
+  children: [ inputbar, listview ];
+  padding: 1.5em;
+  spacing: 1em;
 }
 
 inputbar {
-  margin: 0px 0px 20px 0px;
-  children: [prompt, textbox-prompt-colon, entry, case-indicator];
+  children: [ prompt, entry ];
+  border-radius: @rad;
+  background-color: @alt;
+}
+
+prompt, entry, element selected {
+  vertical-align: 0.5;
+  background-color: @alt;
 }
 
 prompt {
-  text-color: @blue;
-}
-
-textbox-prompt-colon {
-  expand: false;
-  str: ":";
-  text-color: @text-alt;
+   text-color: #000000;
+   padding: 1.5%;
+   font: "Jetbrains Mono Bold 10";
 }
 
 entry {
-  margin: 0px 10px;
+  text-color: #000000;
+  blink: false;
+  padding: 0 1.5% 0 0;
+  placeholder: "Search...";
+  placeholder-color: grey;
 }
 
 listview {
-  spacing: 5px;
-  dynamic: true;
-  scrollbar: false;
+  layout: vertical;
+  lines: 2;
+  columns: 2;
+  cycle: false;
 }
 
 element {
-  padding: 5px;
-  text-color: @text-alt;
-  highlight: bold #95ee8f; /* green */
-  border-radius: 3px;
+  orientation: vertical;
+  padding: 1em;
+  border-radius: @rad;
 }
 
-element selected {
-  background-color: @emphasis;
-  text-color: @text;
+element-text, element-icon {
+  horizontal-align: 0.5;
+  background-color: inherit;
 }
 
-element urgent, element selected urgent {
-  text-color: @red;
+element-text { expand: true; }
+element-icon { size: 48px; }
+
+listview, element, element selected, element-text, element-icon {
+  cursor: pointer;
 }
 
-element active, element selected active {
-  text-color: @purple;
+entry {
+  cursor: text;
 }
-
-message {
-  padding: 5px;
-  border-radius: 3px;
-  background-color: @emphasis;
-  border: 1px;
-  border-color: @cyan;
-}
-
-button selected {
-  padding: 5px;
-  border-radius: 3px;
-  background-color: @emphasis;
-}
-
