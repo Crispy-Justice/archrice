@@ -9,6 +9,8 @@ window:
 # Setting zsh as the default shell
 shell:
     program: /bin/zsh
+    
+background_opacity: 0.6
 
 # Font
 font:
