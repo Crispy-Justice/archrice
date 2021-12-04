@@ -18,7 +18,7 @@ nautilus
 neofetch
 papirus-icon-theme
 picom-ibhagwan-git
-pipes.sh
+pipes-rs
 pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
@@ -41,3 +41,5 @@ xorg
 yt-dlp
 zip
 zsh
+ytmdl
+tty-qlock
