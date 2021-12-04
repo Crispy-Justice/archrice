@@ -25,7 +25,7 @@
 
 ##  Install all the packages
 
-    sudo pacman -S --needed --noconfirm --sudoloop <packges>
+    paru -S --needed --sudoloop <packges>
 **reboot**
 
 ## Install oh-my-zsh
