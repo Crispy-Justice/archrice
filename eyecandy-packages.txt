@@ -15,7 +15,7 @@ lightdm
 lsd
 nano
 nautilus
-neofetch
+pfetch
 papirus-icon-theme
 picom-ibhagwan-git
 pipes-rs
