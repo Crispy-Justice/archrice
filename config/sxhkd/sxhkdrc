@@ -17,7 +17,7 @@ super + Escape
 super + alt + p
   rofi -show menu -modi "menu:rofi-power-menu --choices=logout/suspend/reboot/shutdown" -theme powermenu
 
-super + alt + c
+super + shift + v
   rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}' -theme clipboard
 
 
